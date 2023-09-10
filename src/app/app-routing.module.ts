@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+ import { HomeComponent } from './components/home/home.component';
+ import { AboutComponent } from './components/about/about.component';
+ import { AdmissionComponent } from './components/admission/admission.component';
+
+
+
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'admission', component: AdmissionComponent },
+  { path: '**', component: HomeComponent },
+  { path: '', component: HomeComponent },
+];
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

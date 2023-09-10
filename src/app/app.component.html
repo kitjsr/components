@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<nav>
+    <ul>
+      <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">HOME</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+      <li><a routerLink="/admission" routerLinkActive="active" ariaCurrentWhenActive="page">Admission</a>
+    </li>
+    <li><fa-icon [icon]="faCoffee"></fa-icon>
+    </li>
+    </ul>
+  </nav>
+  
+<router-outlet></router-outlet>
+<app-footer></app-footer>

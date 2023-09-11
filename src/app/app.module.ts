@@ -57,14 +57,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TableComponent,
     ToastComponent,
     TooltipComponent,
-    FontAwesomeModule,
 
  ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
